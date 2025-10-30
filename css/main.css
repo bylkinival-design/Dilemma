@@ -20,7 +20,7 @@ body {
 }
 .grid-container {
     display: grid;
-    grid-template-rows: 21.6vw auto 60vw;
+    grid-template-rows: 21.6vw auto auto;
     grid-template-columns: 1fr;
     gap: 2.36vw;
 }
@@ -57,7 +57,7 @@ color: transparent;
     width: auto;
     display: grid;
     justify-content: center;
-    grid-template-rows: 9vw auto;
+    grid-template-rows: auto auto;
 }
 .button-n-text button {
     justify-self: center;
@@ -134,6 +134,7 @@ align-items: center;
     width: 90vw;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 4vw;
 }
 .logo img {
     height: 65vw;
