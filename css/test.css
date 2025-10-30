@@ -1,0 +1,11 @@
+body {
+    background-color: gray;
+    height: 1580px;
+    width: 780px;
+    border: 1px solid white;
+}
+.but {
+    height: 50px;
+    width: 100px;
+    background-color: white;
+}

@@ -1,0 +1,176 @@
+:root {
+    --gradient-text: linear-gradient(to bottom right, #C88209 60%, #F2CF87 70%, #C88209 80%);
+    --gradient-tasks-text: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)) padding-box, linear-gradient(to bottom right, #C88209 80%, #F2CF87 100%) border-box;
+    --gradient-referal-text: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)) padding-box, linear-gradient(to bottom right, #C88209 20%, #F2CF87 50%);
+    --gradient-leaders-text: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)) padding-box, linear-gradient(to bottom right, #F2CF87 50%, #C88209 80%);
+    --gradient-buttons: linear-gradient(black, black) padding-box, linear-gradient(to bottom right, #C88209, #F2CF87, #C88209) border-box;
+    --gradient-tasks-icon: linear-gradient(black, black) padding-box, linear-gradient(to bottom right, #C88209 30%, #F2CF87 90%) border-box;  
+    --gradient-referal-icon: linear-gradient(black, black) padding-box, linear-gradient(to bottom right, #C88209 0%, #F2CF87 50%, #C88209 100%) border-box;
+    --gradient-leaders-icon: linear-gradient(black, black) padding-box, linear-gradient(to bottom right, #F2CF87 0%, #C88209 90%) border-box;  
+    --gradient-circle: linear-gradient(black, black) padding-box, linear-gradient(to bottom right, #C88209 31%, #F2CF87 47%, #C88209 61%) border-box;
+}
+
+body {
+    background-color: black;
+    width: 780px;
+    border: 1px solid white;
+}
+.grid-container {
+    display: grid;
+}
+div .score-text {
+    position: absolute;
+    top: 160px;
+    left: 0px;
+    height: 150px;
+    width: 780px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.score-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 150px;
+    font-weight: 200;
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.icon_text_main {
+    display: flex;
+    position: absolute;
+    top: 324px;
+    left: 0px;
+    height: 65px;
+    width: 780px;
+}
+
+.icon_text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    font-weight: lighter;
+    position: absolute;
+    top: -5px;
+}
+.text1 {
+    position: absolute;
+    left: 71px;
+    background: var(--gradient-tasks-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.text2 {
+    position: absolute;
+    left: 282px;
+    background: var(--gradient-referal-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.text3 {
+    position: absolute;
+    left: 537px;
+    background: var(--gradient-leaders-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/*Класс вырезания окантовки*/
+.bord {
+background-origin: padding-box, border-box;
+background-clip: padding-box, border-box;
+color: transparent;
+}
+
+/*Панель кнопок*/
+.buttons{
+    position: absolute;
+    top: 389px;
+    left: 0px;
+    height: 180px;
+    width: 780px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+/*Кнопки*/
+.buttons_indiv{
+height: 180px;
+width: 180px;
+border: 2px solid transparent;
+border-radius: 20px;
+background: var(--gradient-buttons);
+}
+
+/*Кнопки по отдельности*/
+.but1{
+background: var(--gradient-tasks-icon);
+}
+.but2{
+background: var(--gradient-referal-icon)
+}
+.but3{
+background: var(--gradient-leaders-icon)
+}
+
+/*Иконки кнопок*/
+.button_icon {
+    height: 113px;
+    width: auto;
+}
+.buttons_indiv img {
+    transition: 0.4s;
+}
+.buttons_indiv:hover img{
+    scale: 0.96;
+}
+
+/* Блок Кликер */
+.cent {
+position: absolute;
+display: grid;
+place-items: center;
+}
+
+/*Логотип*/
+.logo {
+    top: 625px;
+    left: 68px;
+    height: 644px;
+    width: 644px;
+}
+.logo img {
+    height: 450px;
+    width: 436px;
+}
+
+/*Стили для обработки клика*/
+.clicked {
+    transition: transform 0.4s ease;
+}
+.click-animation.clicked {
+    transform: scale(0.9);
+    transition: transform 0.03s ease;
+}
+
+/*Внешний круг*/
+.vnesh_circle {
+height: 636px;
+width: 636px;
+border: 15px solid transparent;
+border-radius: 50%;
+background: var(--gradient-circle)
+}
+
+/*Внутренний круг*/
+.vnut_circle {
+height: 611px;
+width: 611px;
+border: 3px solid transparent;
+border-radius: 50%;
+background: var(--gradient-circle)
+}
